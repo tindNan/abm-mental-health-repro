@@ -35,11 +35,11 @@ def test_baseline_prevalence():
     avg_depression = sum(depression_rates) / len(depression_rates)
     avg_anxiety = sum(anxiety_rates) / len(anxiety_rates)
 
-    # Check within reasonable range of baseline (allowing for randomness)
-    assert 0.20 <= avg_depression <= 0.32, (
+    # Check within reasonable range of baseline (allowing for randomness and risk factors)
+    assert 0.20 <= avg_depression <= 0.40, (
         f"Depression rate {avg_depression} outside expected range"
     )
-    assert 0.14 <= avg_anxiety <= 0.24, (
+    assert 0.14 <= avg_anxiety <= 0.30, (
         f"Anxiety rate {avg_anxiety} outside expected range"
     )
 

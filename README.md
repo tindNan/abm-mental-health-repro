@@ -1,6 +1,6 @@
 # 🧠 Nairobi Youth Mental Health Agent-Based Model
 
-An interactive simulation dashboard for understanding mental health transmission among youth (ages 15-24) in Nairobi, Kenya. This agent-based model (ABM) uses real research data to simulate how depression and anxiety spread through social networks and to test intervention strategies.
+An interactive simulation dashboard for understanding mental health transmission among youth (ages 15-24) in Nairobi, Kenya. This agent-based model (ABM) uses real research data to simulate how depression and anxiety spread through social networks, test intervention strategies, and track individual agent journeys over time.
 
 ## 🎯 Purpose
 
@@ -60,21 +60,46 @@ Key parameters include:
 - **Social Connections**: Average network size
 - **Peer Influence Strength**: How much peers affect mental health
 
-### 2. **Initialize the Model**
+### 2. **Set Simulation Length** (NetLogo-style)
+Choose how many ticks (simulation steps) to run:
+- **Tick Options**: 10, 25, 50, 100, 250, 500, 1000, 2000
+- **Auto-stop**: Automatically pause when reaching target ticks
+- **Progress Bar**: Visual progress tracking
+
+### 3. **Initialize the Model**
 Click "🔄 Initialize Model" to create the population with your selected parameters.
 
-### 3. **Run the Simulation**
-- Click "▶️ Run Simulation" to start
-- Watch the visualizations update in real-time
-- Click "⏸️ Pause" to stop and examine the current state
-- Click "🔁 Reset" to start over with new parameters
+### 4. **Run the Simulation**
+Multiple control options available:
+- **▶️ Run Simulation**: Start real-time simulation with visual updates
+- **⏸️ Pause**: Stop and examine current state  
+- **⏭️ Step Once**: Advance by exactly one tick
+- **⚡ Run to Target**: Execute all remaining ticks instantly (fast)
+- **🔁 Reset**: Start over with new parameters
 
-### 4. **Interpret the Results**
-The dashboard shows four main visualizations:
+The current tick counter shows progress like NetLogo's interface.
+
+### 5. **Interpret the Results**
+The dashboard shows multiple synchronized visualizations:
+
+**Population-Level Analysis:**
 1. **Time Series**: Depression and anxiety rates over time
 2. **State Distribution**: Current count of healthy, at-risk, symptomatic, and recovering agents
 3. **Network View**: Social connections colored by mental health state (for small populations)
 4. **Correlation Plot**: Relationship between depression and anxiety scores
+
+**Individual Agent Analysis (NEW!):**
+5. **Agent Grid**: Every agent as a colored dot showing their mental health state
+   - 🟢 Healthy, 🟡 At Risk, 🔴 Symptomatic, 🔵 Recovering
+   - Larger dots = seeking treatment
+   - Hover for detailed agent information
+   - Available for populations ≤2000 (performance optimized)
+6. **Individual Timelines**: Track selected agents over time
+   - **Agent Selection**: Choose specific agents or pick random ones
+   - **State History**: See how agents transition between mental health states
+   - **Score Evolution**: Depression/anxiety levels over time
+   - **Treatment Tracking**: Purple crosses show when seeking treatment
+   - **Current Status**: Real-time metrics for selected agent
 
 Metrics display:
 - Current vs baseline rates
