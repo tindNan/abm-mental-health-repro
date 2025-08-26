@@ -1,0 +1,77 @@
+{
+  "population_size": {
+    "description": "Number of agents in the simulation",
+    "citation": "Scaled representation of ~880,000 youth aged 15-24 in Nairobi (research.md)",
+    "importance": "Larger populations show more realistic network effects but require more computation"
+  },
+  "informal_settlement_rate": {
+    "description": "Percentage of youth living in informal settlements (slums)",
+    "citation": "50% of Nairobi's population resides in informal settlements covering only 5% of residential land (research.md)",
+    "importance": "Living conditions strongly affect mental health risk factors and stress exposure"
+  },
+  "baseline_depression_rate": {
+    "description": "Initial prevalence of depression in the population",
+    "citation": "Depression prevalence reaches 26% overall, rising to 36% among out-of-school adolescents (research.md)",
+    "importance": "Sets the starting point for mental health transmission dynamics"
+  },
+  "baseline_anxiety_rate": {
+    "description": "Initial prevalence of anxiety in the population",
+    "citation": "Anxiety affects 19.1% of youth, increasing to 27.7% for those out of school (research.md)",
+    "importance": "Anxiety often co-occurs with depression and spreads through social networks"
+  },
+  "out_of_school_rate": {
+    "description": "Percentage of youth not enrolled in school",
+    "citation": "Only 53% of primary completers transition to secondary school (research.md)",
+    "importance": "Out-of-school youth face nearly double the risk of mental health issues"
+  },
+  "avg_social_connections": {
+    "description": "Average number of social network connections per person",
+    "citation": "Based on high population density (49,228 persons/km² in Kibera) and collectivist culture (research.md)",
+    "importance": "More connections increase both risk exposure and potential support"
+  },
+  "avg_social_media_hours": {
+    "description": "Average daily hours spent on social media platforms",
+    "citation": "Nairobi youth spend 3 hours 43 minutes daily on social media - highest globally (research.md)",
+    "importance": "Digital connections create additional pathways for mental health influence"
+  },
+  "religious_participation_rate": {
+    "description": "Percentage attending weekly religious services",
+    "citation": "70% weekly religious attendance with 82% considering religion 'very important' (research.md)",
+    "importance": "Religious participation provides strong protective effects against mental health issues"
+  },
+  "peer_influence_strength": {
+    "description": "Strength of peer effects on mental health (beta coefficient)",
+    "citation": "Peer support is the strongest predictor of resilience with β = 2.13 (research.md)",
+    "importance": "Peer influence is the primary transmission mechanism for mental health conditions"
+  },
+  "loneliness_impact_factor": {
+    "description": "Odds ratio for loneliness causing depression",
+    "citation": "Loneliness shows the strongest association with depression, OR = 10.68 (research.md)",
+    "importance": "Loneliness dramatically increases vulnerability to mental health issues"
+  },
+  "treatment_access_rate": {
+    "description": "Percentage able to access formal mental health services",
+    "citation": "Only 2% access formal mental health services despite high need, with 75-98% treatment gap (research.md)",
+    "importance": "Limited access creates accumulation of untreated mental health conditions"
+  },
+  "environmental_stress_multiplier": {
+    "description": "Additional stress factor for those in informal settlements",
+    "citation": "Slum conditions include overcrowding (8+ people in 144 sq ft), violence exposure (57% crime involvement), and infrastructure deficits (research.md)",
+    "importance": "Environmental stressors compound individual mental health vulnerabilities"
+  },
+  "digital_intervention": {
+    "description": "Enable mental health support through social media channels",
+    "citation": "With 80%+ smartphone ownership and 3.73 hours daily usage, digital platforms offer scalable intervention pathways (research.md)",
+    "importance": "Digital interventions can reach youth where they already spend time"
+  },
+  "peer_support_coverage": {
+    "description": "Percentage of youth enrolled in peer support programs",
+    "citation": "Peer support shows strongest protective effects (β = 2.13) against mental health deterioration (research.md)",
+    "importance": "Peer support programs leverage natural social networks for mental health protection"
+  },
+  "service_improvement": {
+    "description": "Increase in mental health service accessibility",
+    "citation": "Kenya has only 100 psychiatrists for 52+ million people, with community services minimal (research.md)",
+    "importance": "Improving access from 2% baseline could dramatically reduce untreated mental illness"
+  }
+}
